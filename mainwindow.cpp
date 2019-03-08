@@ -31,46 +31,36 @@ void MainWindow::validateAnswer(QString correctAnswer)
 void MainWindow::on_pushButton_clicked()
 {
     switch  (counter) {
-    case 0: {
+    case 0:
         validateAnswer("4");
         break;
-    }
-     case 1: {
+     case 1:
         validateAnswer("1");
         break;
-    }
-    case 2: {
+    case 2:
         validateAnswer("3");
         break;
-    }
-    case 3: {
+    case 3:
         validateAnswer("4");
         break;
-    }
-    case 4: {
+    case 4:
         validateAnswer("2");
         break;
-    }
-    case 5: {
+    case 5:
         validateAnswer("3");
         break;
-    }
-    case 6: {
+    case 6:
         validateAnswer("4");
         break;
-    }
-    case 7: {
+    case 7:
         validateAnswer("3");
         break;
-    }
-    case 8: {
+    case 8:
         validateAnswer("3");
         break;
-    }
-    case 9: {
+    case 9:
         validateAnswer("3");
         break;
-    }
     }
 
     ui->lbl_score_value->setText(QString::number(richtigeAntwort-falscheAntwort));
